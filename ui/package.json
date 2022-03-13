@@ -1,0 +1,38 @@
+{
+  "name": "assignment-4-ui",
+  "version": "1.0.0",
+  "description": "UI server setup for inventory management app - REACT & EXPRESS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -w uiserver.js -w .env uiserver.js",
+    "lint": "eslint . --ext js,jsx --ignore-pattern public",
+    "compile": "babel src --out-dir public",
+    "watch": "babel src --out-dir public --watch --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surakshitha/Pro-Mern-A4.git"
+  },
+  "author": "suraksha.s09@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surakshitha/Pro-Mern-A4/issues"
+  },
+  "homepage": "https://github.com/surakshitha/Pro-Mern-A4#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0"
+  }
+}
